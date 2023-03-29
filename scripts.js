@@ -8,8 +8,10 @@ document.addEventListener("DOMContentLoaded", () => {
   video.addEventListener("loadeddata", () => {
     video.style.opacity = 1;
     setTimeout(() => {
-      iframeContainer.style.opacity = 1;
       yourIframe.src = iframeSrc;
+      setTimeout(() => {
+        iframeContainer.style.opacity = 1; // Start the fade-in effect
+      }, 1000); // Add this delay before starting the fade-in effect
     }, 10000);
   });
 });
