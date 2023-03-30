@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
       yourIframe.src = iframeSrc;
       setTimeout(() => {
         iframeContainer.style.opacity = 1; // Start the fade-in effect
-      }, 1000); // Add this delay before starting the fade-in effect
+      }, 2000); // Add this delay before starting the fade-in effect
     }, 10000);
   });
 });
